@@ -27,7 +27,7 @@ function overlay() {
 /******************** Main beverage's image *********************/
 function main_beverage() {
   var image = new Image();
-  image.src = "coke.png";
+  image.src = "assets/coke.png";
   image.onload = function() {
     ctx.drawImage(image, 0, 220);
     overlay()
@@ -37,7 +37,7 @@ function main_beverage() {
 /************************** Cube image **************************/
 function cube() {
   other_image = new Image();
-  other_image.src = "single-cube.png";
+  other_image.src = "assets/single-cube.png";
   other_image.onload = function() {
     _Go();
     fillBeverage();
@@ -47,9 +47,8 @@ function cube() {
 function fillBeverage() {
 if (currentX == canvas.width / 2 &&
   currentY == canvas.height / 1.2){
-   // ctx.fillStyle = "rgba(202, 200, 200, 0.5)";
-   // ctx.fillRect(0, 220, canvas.width / 3, canvas.height / 2);
-    console.log("Holla Emigo!")
+    ctx.fillStyle = "rgba(202, 200, 200, 0.5)";
+    ctx.fillRect(0, 220, canvas.width / 3, canvas.height / 2);
   }
 }
 
