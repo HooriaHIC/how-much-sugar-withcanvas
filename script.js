@@ -5,6 +5,7 @@ var myheight = 100;
 currentX = canvas.width / 2;
 currentY = canvas.height / 1.1;
 var isDraggable = false;
+
 /****************** Main beverage's text ***********************/
 function text() {
   ctx.font = "20px Comic Sans MS";
@@ -120,3 +121,47 @@ canvas.onmousemove = function(e) {
 /************************************************************
                             Cube Draging End
 *************************************************************/
+
+/******************* Beverages Work Start ******************/
+const beverages = [
+  {
+    "name": "coke",
+    "sugar": 39,
+    image: new Image()
+  },
+  {
+    "name": "pepsi",
+    "sugar": 41,
+    image: new Image()
+  },
+  {
+    "name": "mountain_dew",
+    "sugar": 46,
+    image: new Image()
+  },
+  {
+    "name": "sprite",
+    "sugar": 38,
+    image: new Image()
+  },
+  {
+    "name": "7_up",
+    "sugar": 38,
+    image: new Image()
+  },
+  {
+    "name": "fanta",
+    "sugar": 44,
+    image: new Image()
+  },
+  {
+    "name": "red_bull",
+    "sugar": 39,
+    image: new Image()
+  },
+  {
+    "name": "dr_pepper",
+    "sugar": 40,
+    image: new Image()
+  },
+];
